@@ -1,0 +1,141 @@
+{
+  "recordingID": "2019-7-15-14H38M34S261",
+  "applicationName": "LHAppConsole",
+  "frames": [
+    {
+      "frameStamp": "00:00:04.6299967",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.36946106",
+        "Acc_Y": "",
+        "Acc_Z": ""
+      }
+    },
+    {
+      "frameStamp": "00:00:04.6484959",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.36946106",
+        "Acc_Y": "-0.07710266",
+        "Acc_Z": ""
+      }
+    },
+    {
+      "frameStamp": "00:00:04.6499956",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.36946106",
+        "Acc_Y": "-0.07710266",
+        "Acc_Z": "9.902542"
+      }
+    },
+    {
+      "frameStamp": "00:00:06.1120000",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38130188",
+        "Acc_Y": "-0.07710266",
+        "Acc_Z": "9.902542"
+      }
+    },
+    {
+      "frameStamp": "00:00:06.1224948",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38130188",
+        "Acc_Y": "-0.07543945",
+        "Acc_Z": "9.902542"
+      }
+    },
+    {
+      "frameStamp": "00:00:06.1294977",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38130188",
+        "Acc_Y": "-0.07543945",
+        "Acc_Z": "9.908783"
+      }
+    },
+    {
+      "frameStamp": "00:00:07.5670490",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.37709045",
+        "Acc_Y": "-0.07543945",
+        "Acc_Z": "9.908783"
+      }
+    },
+    {
+      "frameStamp": "00:00:07.5744974",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.37709045",
+        "Acc_Y": "-0.07696533",
+        "Acc_Z": "9.908783"
+      }
+    },
+    {
+      "frameStamp": "00:00:07.5854940",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.37709045",
+        "Acc_Y": "-0.07696533",
+        "Acc_Z": "9.915436"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.6054938",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.3717804",
+        "Acc_Y": "-0.07696533",
+        "Acc_Z": "9.915436"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.6139960",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.3717804",
+        "Acc_Y": "-0.0728302",
+        "Acc_Z": "9.915436"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.6244938",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.3717804",
+        "Acc_Y": "-0.0728302",
+        "Acc_Z": "9.91539"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.6439997",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38250732",
+        "Acc_Y": "-0.0728302",
+        "Acc_Z": "9.91539"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.6504953",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38250732",
+        "Acc_Y": "-0.07545471",
+        "Acc_Z": "9.91539"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.6604946",
+      "frameAttributes": {
+        "Question": "",
+        "Acc_X": "-0.38250732",
+        "Acc_Y": "-0.07545471",
+        "Acc_Z": "9.913071"
+      }
+    }
+  ]
+}

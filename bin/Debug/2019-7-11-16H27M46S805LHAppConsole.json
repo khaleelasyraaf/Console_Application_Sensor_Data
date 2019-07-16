@@ -1,0 +1,54 @@
+{
+  "recordingID": "2019-7-11-16H27M46S805",
+  "applicationName": "LHAppConsole",
+  "frames": [
+    {
+      "frameStamp": "00:00:09.7353973",
+      "frameAttributes": {
+        "text": "Name"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.7463957",
+      "frameAttributes": {
+        "text": "X: -0.4651947"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.7473942",
+      "frameAttributes": {
+        "text": "Y: -0.14735413"
+      }
+    },
+    {
+      "frameStamp": "00:00:09.7473942",
+      "frameAttributes": {
+        "text": "Z: 9.92131"
+      }
+    },
+    {
+      "frameStamp": "00:00:12.2208198",
+      "frameAttributes": {
+        "text": "hi"
+      }
+    },
+    {
+      "frameStamp": "00:00:12.2218244",
+      "frameAttributes": {
+        "text": "X: -0.46253967"
+      }
+    },
+    {
+      "frameStamp": "00:00:12.2228204",
+      "frameAttributes": {
+        "text": "Y: -0.16267395"
+      }
+    },
+    {
+      "frameStamp": "00:00:12.2228204",
+      "frameAttributes": {
+        "text": "Z: 9.912567"
+      }
+    }
+  ]
+}

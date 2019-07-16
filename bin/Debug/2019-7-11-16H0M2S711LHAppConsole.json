@@ -1,0 +1,78 @@
+{
+  "recordingID": "2019-7-11-16H0M2S711",
+  "applicationName": "LHAppConsole",
+  "frames": [
+    {
+      "frameStamp": "00:00:04.0877535",
+      "frameAttributes": {
+        "text": "Name"
+      }
+    },
+    {
+      "frameStamp": "00:00:04.1002937",
+      "frameAttributes": {
+        "text": "X: -0.29937744"
+      }
+    },
+    {
+      "frameStamp": "00:00:04.1002937",
+      "frameAttributes": {
+        "text": "Y: -0.1842804"
+      }
+    },
+    {
+      "frameStamp": "00:00:04.1012931",
+      "frameAttributes": {
+        "text": "Z: 9.909378"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.3361951",
+      "frameAttributes": {
+        "text": "hi"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.3371950",
+      "frameAttributes": {
+        "text": "X: -0.3001709"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.3371950",
+      "frameAttributes": {
+        "text": "Y: -0.1592865"
+      }
+    },
+    {
+      "frameStamp": "00:00:08.3371950",
+      "frameAttributes": {
+        "text": "Z: 9.909088"
+      }
+    },
+    {
+      "frameStamp": "00:00:10.7505730",
+      "frameAttributes": {
+        "text": "hu"
+      }
+    },
+    {
+      "frameStamp": "00:00:10.7515730",
+      "frameAttributes": {
+        "text": "X: -0.29838562"
+      }
+    },
+    {
+      "frameStamp": "00:00:10.7535757",
+      "frameAttributes": {
+        "text": "Y: -0.16662598"
+      }
+    },
+    {
+      "frameStamp": "00:00:10.7545738",
+      "frameAttributes": {
+        "text": "Z: 9.917938"
+      }
+    }
+  ]
+}
