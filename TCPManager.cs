@@ -45,11 +45,11 @@ namespace LHAppConsoleApplication2
 
         #region Variables
 
-        public IDuplexTypedMessageReceiver<MyResponse, MyRequest> myReceiver;
+        public IDuplexTypedMessageReceiver<String, String> myReceiver;
         public IDuplexTypedMessagesFactory aReceiverFactory;
         public IMessagingSystemFactory aMessaging;
         public IDuplexInputChannel anInputChannel;
-        public string IPAddress = "tcp://192.168.0.100:8800/";
+        public string IPAddress = "tcp://192.168.0.101:8800/";
         #endregion
 
         #region Properties
@@ -67,7 +67,7 @@ namespace LHAppConsoleApplication2
         {
             // Create message receiver receiving 'MyRequest' and receiving 'MyResponse'.
             aReceiverFactory = new DuplexTypedMessagesFactory();
-            myReceiver = aReceiverFactory.CreateDuplexTypedMessageReceiver<MyResponse, MyRequest>();
+            myReceiver = aReceiverFactory.CreateDuplexTypedMessageReceiver<String, String>();
 
             // Subscribe to handle messages.
             myReceiver.MessageReceived += OnMessageReceived;
@@ -106,18 +106,19 @@ namespace LHAppConsoleApplication2
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void OnMessageReceived(object sender,
-              TypedRequestReceivedEventArgs<MyRequest> e)
+              TypedRequestReceivedEventArgs<String> e)
         {
-            Console.WriteLine("Received: " + e.RequestMessage.Text);
+            Console.WriteLine("Received: " + e);
             AccelerometerDataChangedEventArgs args = new AccelerometerDataChangedEventArgs();
-            args.s = e.RequestMessage.Text;
+            args.s = e.RequestMessage;
             OnAccDataChanged(args);
+
             // Create the response message.
             MyResponse aResponse = new MyResponse();
-            aResponse.Length = e.RequestMessage.Text.Length;
+            aResponse.Length = e.RequestMessage.Length;
 
             // Send the response message back to the client.
-            myReceiver.SendResponseMessage(e.ResponseReceiverId, aResponse);
+            myReceiver.SendResponseMessage(e.ResponseReceiverId, aResponse.Length.ToString());
         }
 
     }

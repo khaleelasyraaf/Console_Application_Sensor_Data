@@ -20,6 +20,9 @@ namespace LHAppConsoleApplication2
         private string Acc_X = "";
         private string Acc_Y = "";
         private string Acc_Z = "";
+        private string Gyro_X = "";
+        private string Gyro_Y = "";
+        private string Gyro_Z = "";
 
         public LearningHubManager(TCPManager myTCPmanager)
         {
@@ -33,21 +36,30 @@ namespace LHAppConsoleApplication2
         private void MyTCPmanager_AccDataChanged(object sender, TCPManager.AccelerometerDataChangedEventArgs e)
         {
             s = e.s;
-            string indexParameter = s.Substring(0,1);
+            string indexParameter = s.Substring(0,2);
             Console.WriteLine("indexParameter: "+ indexParameter);
             switch (indexParameter)
             {
-                case "X":
-                    Acc_X = s.Substring(s.IndexOf(":")+1);
+                case "AX":
+                    Acc_X = s.Substring(s.IndexOf(":") + 1);
                     break;
-                case "Y":
-                    Acc_Y = s.Substring(s.IndexOf(":")+1);
+                case "AY":
+                    Acc_Y = s.Substring(s.IndexOf(":") + 1);
                     break;
-                case "Z":
-                    Acc_Z = s.Substring(s.IndexOf(":")+1);
+                case "AZ":
+                    Acc_Z = s.Substring(s.IndexOf(":") + 1);
                     break;
-                case "Q":
-                    Question = s.Substring(s.IndexOf(":")+1);
+                case "GX":
+                    Gyro_X = s.Substring(s.IndexOf(":") + 1);
+                    break;
+                case "GY":
+                    Gyro_Y = s.Substring(s.IndexOf(":") + 1);
+                    break;
+                case "GZ":
+                    Gyro_Z = s.Substring(s.IndexOf(":") + 1);
+                    break;
+                case "QQ":
+                    Question = s.Substring(s.IndexOf(":") + 1);
                     break;
 
             }
@@ -98,6 +110,9 @@ namespace LHAppConsoleApplication2
             names.Add("Acc_X");
             names.Add("Acc_Y");
             names.Add("Acc_Z");
+            names.Add("Gyro_X");
+            names.Add("Gyro_Y");
+            names.Add("Gyro_Z");
             myConnector.setValuesName(names);
 
         }
@@ -111,13 +126,20 @@ namespace LHAppConsoleApplication2
             values.Add(Acc_X);
             values.Add(Acc_Y);
             values.Add(Acc_Z);
+            values.Add(Gyro_X);
+            values.Add(Gyro_Y);
+            values.Add(Gyro_Z);
 
             myConnector.storeFrame(values);
-            Question = "";
-            Console.WriteLine("x:" + Acc_X);
-            Console.WriteLine("y:" + Acc_Y);
-            Console.WriteLine("z:" + Acc_Z);
+            
+            Console.WriteLine("AccX:" + Acc_X);
+            Console.WriteLine("AccY:" + Acc_Y);
+            Console.WriteLine("AccZ:" + Acc_Z);
+            Console.WriteLine("GyroX:" + Gyro_X);
+            Console.WriteLine("GyroY:" + Gyro_Y);
+            Console.WriteLine("GyroZ:" + Gyro_Z);
             Console.WriteLine("Question:" + Question);
+            Question = "";
         }
 
         public void StartRecording()
