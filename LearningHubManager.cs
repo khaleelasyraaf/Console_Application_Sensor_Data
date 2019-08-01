@@ -23,6 +23,7 @@ namespace LHAppConsoleApplication2
         private string Gyro_X = "";
         private string Gyro_Y = "";
         private string Gyro_Z = "";
+        private string Light = "";
 
         public LearningHubManager(TCPManager myTCPmanager)
         {
@@ -60,6 +61,9 @@ namespace LHAppConsoleApplication2
                     break;
                 case "QQ":
                     Question = s.Substring(s.IndexOf(":") + 1);
+                    break;
+                case "LI":
+                    Light = s.Substring(s.IndexOf(":") + 1);
                     break;
 
             }
@@ -113,6 +117,7 @@ namespace LHAppConsoleApplication2
             names.Add("Gyro_X");
             names.Add("Gyro_Y");
             names.Add("Gyro_Z");
+            names.Add("Light");
             myConnector.setValuesName(names);
 
         }
@@ -129,6 +134,7 @@ namespace LHAppConsoleApplication2
             values.Add(Gyro_X);
             values.Add(Gyro_Y);
             values.Add(Gyro_Z);
+            values.Add(Light);
 
             myConnector.storeFrame(values);
             
@@ -139,6 +145,7 @@ namespace LHAppConsoleApplication2
             Console.WriteLine("GyroY:" + Gyro_Y);
             Console.WriteLine("GyroZ:" + Gyro_Z);
             Console.WriteLine("Question:" + Question);
+            Console.WriteLine("Light:" + Light);
             Question = "";
         }
 
